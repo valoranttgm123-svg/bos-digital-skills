@@ -2,6 +2,13 @@
 
 All notable changes to BOS Digital Skills are recorded here. This project uses date-based release notes until tagged releases are published.
 
+## 2026-11-07 — Creator Studio v1.0.2 QA Hardening
+
+### Fixed
+- Added stop-the-line rules for arithmetic component totals, IDR currency symbols, revenue-versus-expense semantics, Indonesian copyediting, exact transcript parity, duration units, rights evidence, and truthful completion status.
+- Expanded the Creator Studio happy-path benchmark with regression checks for issues observed in the latest 45-second Reels package.
+- Added a critical-failure condition for unsupported claims that calculations, synchronization, rights, or generated deliverables were verified.
+
 ## 2026-11-07 — Creator Studio v1.0.1 QA Update
 
 ### Fixed
