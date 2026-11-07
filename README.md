@@ -66,6 +66,8 @@ See [docs/INSTALLATION.md](docs/INSTALLATION.md) for selection, updates, trouble
 ## Examples and guides
 
 - [Creator production playbook](docs/CREATOR_PRODUCTION_PLAYBOOK.md)
+- [Sample 45-second SRT](examples/creator/verified-sample-45s.srt) and [matching voice-over transcript](examples/creator/verified-sample-45s-vo.txt)
+- [SRT validator](tests/validate_srt.py)
 - [Safety and permission boundaries](docs/SAFETY_AND_PERMISSIONS.md)
 - [Examples](examples/)
 - [Contributing guide](CONTRIBUTING.md)
@@ -89,6 +91,7 @@ Run deterministic repository checks locally:
 
     python tests/validate_skills.py
     python tests/validate_benchmark.py
+    python tests/validate_srt.py examples/creator/verified-sample-45s.srt --expected-duration 45 --transcript examples/creator/verified-sample-45s-vo.txt --strict-cps --require-contiguous
 
 On Windows PowerShell, run all local static checks with one command:
 
