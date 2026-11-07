@@ -58,7 +58,7 @@ If current research tools are unavailable, provide evergreen ideas and label the
 
 A production-ready short script should include timestamps, voice-over/dialogue, on-screen text, visual action, B-roll or graphics, sound cues, and transitions. Keep a subtitle-only text track separate from directions.
 
-A storyboard should name each scene and specify framing, subject, action, background, text, and continuity. For motion graphics, define the graphic elements and their movement. Explicitly honor the requested medium (for example, 2D motion graphics rather than 3D animation).
+A storyboard should name each scene and specify framing, subject, action, background, text, and continuity. For motion graphics, define the graphic elements and their movement. Explicitly honor the requested medium (for example, 2D motion graphics rather than 3D animation). Keep scene label, visual, narration, and subtitles semantically aligned; remove brainstorming notes and unresolved self-corrections. For rupiah examples, use Rp notation rather than a dollar symbol.
 
 ## Production handoff
 
