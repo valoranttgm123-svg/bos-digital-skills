@@ -12,7 +12,8 @@ Portable, open Agent Skills by **BOS Digital Indonesia**. Each skill is a focuse
 |---|---|
 | [bos-viral-content-studio](skills/bos-viral-content-studio/SKILL.md) | Creator workflow for trend research, hooks, short/long video scripts, storyboards, voice-over briefs, subtitles, editing, and publishing |
 | [instagram-growth-agent](skills/instagram-growth-agent/SKILL.md) | Ethical Instagram profile strategy, content pillars, editorial calendars, organic distribution, and analytics |
-| [youtube-creator-agent](skills/youtube-creator-agent/SKILL.md) | YouTube channel strategy, topic research, scripts, titles, thumbnails, Shorts, metadata, and analytics |\n| [ai-design-studio](skills/ai-design-studio/SKILL.md) | Creative direction, image-generation prompts, brand systems, layouts, accessibility, and production specs |
+| [youtube-creator-agent](skills/youtube-creator-agent/SKILL.md) | YouTube channel strategy, topic research, scripts, titles, thumbnails, Shorts, metadata, and analytics |
+| [ai-design-studio](skills/ai-design-studio/SKILL.md) | Creative direction, image-generation prompts, brand systems, layouts, accessibility, and production specs |
 
 ### Automation and development
 
@@ -82,13 +83,21 @@ The repository uses the open Agent Skills folder convention: each skill lives at
 - Respect copyright, privacy, platform terms, licenses, and applicable law.
 - Do not commit credentials, API keys, private datasets, customer details, or confidential application artifacts.
 
-## Validation
+## Validation and behavioral benchmark
 
-Run the standard-library validator locally:
+Run deterministic repository checks locally:
 
     python tests/validate_skills.py
+    python tests/validate_benchmark.py
 
-A GitHub Actions workflow runs the same validation on pushes and pull requests.
+Print a test prompt for an agent:
+
+    python tests/show_case.py --list
+    python tests/show_case.py --skill bos-viral-content-studio --scenario happy-path
+
+The benchmark contains 45 scenarios (three for each skill). See [Benchmark & Testing](docs/BENCHMARK_AND_TESTING.md), the [evaluation rubric](evals/RUBRIC.md), and the [cross-agent test protocol](evals/TEST_PROTOCOL.md).
+
+GitHub Actions validates file structure, metadata, benchmark coverage, and additional quality diagnostics on pushes and pull requests. Static CI does not execute a live model; behavioral passes must be recorded separately.
 
 ## License
 
