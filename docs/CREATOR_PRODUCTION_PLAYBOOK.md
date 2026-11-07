@@ -60,6 +60,14 @@ A production-ready short script should include timestamps, voice-over/dialogue, 
 
 A storyboard should name each scene and specify framing, subject, action, background, text, and continuity. For motion graphics, define the graphic elements and their movement. Explicitly honor the requested medium (for example, 2D motion graphics rather than 3D animation). Keep scene label, visual, narration, and subtitles semantically aligned; remove brainstorming notes and unresolved self-corrections. For rupiah examples, use Rp notation rather than a dollar symbol.
 
+
+
+For subtitle quality, run the repository SRT checker against the master voice-over transcript:
+
+    python tests/validate_srt.py examples/creator/verified-sample-45s.srt --expected-duration 45 --transcript examples/creator/verified-sample-45s-vo.txt --strict-cps --require-contiguous
+
+This checks sequence numbers, valid timecodes, overlap/gaps, total duration, a 17-characters-per-second editorial review threshold, and exact cue text against the transcript. It cannot prove synchronization to a rendered recording; listen to and inspect the final audio/video before claiming that.
+
 ## Production handoff
 
 State which parts are complete and which require tools or a human:
