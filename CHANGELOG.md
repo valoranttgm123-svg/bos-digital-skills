@@ -2,6 +2,13 @@
 
 All notable changes to BOS Digital Skills are recorded here. This project uses date-based release notes until tagged releases are published.
 
+## 2026-11-07 — Creator Studio v1.0.1 QA Update
+
+### Fixed
+- Added checks for scene/narration semantic consistency, Indonesian rupiah formatting, clean creative concepts, and cross-file CTA/subtitle parity.
+- Added a reusable SRT validator and a checked 45-second sample transcript/SRT pair.
+- Tightened the happy-path benchmark acceptance criteria based on the actual Codex output reviewed in this conversation.
+
 ## 2026-11-07 — Creator Studio Quality Hardening
 
 ### Added
