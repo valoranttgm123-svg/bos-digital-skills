@@ -90,6 +90,10 @@ Run deterministic repository checks locally:
     python tests/validate_skills.py
     python tests/validate_benchmark.py
 
+On Windows PowerShell, run all local static checks with one command:
+
+    .\tests\Run-LocalChecks.ps1
+
 Print a test prompt for an agent:
 
     python tests/show_case.py --list
