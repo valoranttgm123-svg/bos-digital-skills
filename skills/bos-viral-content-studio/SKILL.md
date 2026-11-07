@@ -56,3 +56,40 @@ Unless the user asks for a smaller deliverable, return:
 ## Performance review
 
 Do not call a post viral based only on view count. Ask for the platform, reporting window, follower baseline, and available analytics. Compare like-for-like content and report limitations.
+
+## Pre-delivery quality gate
+
+Before presenting a content package as complete, run this checklist against the actual deliverables:
+
+### Creative and script completeness
+- Provide at least 3 genuinely different concepts and at least 3 distinct opening hooks unless the user explicitly requests one option.
+- Make the audience promise and creative angle explicit. Each hook must lead naturally into the story and payoff.
+- Include the complete timestamped narration/dialogue, not just a summary of what a script file contains.
+- Ensure every scene has a clear purpose, duration, visual subject/action, on-screen copy, transition, and audio cue where relevant.
+- Keep every scene aligned with the requested medium (for example, 2D motion graphics, live action, or stop motion).
+
+### Timeline and factual consistency
+- Check that scene start/end times cover the requested duration without unintended gaps or overlaps.
+- Check that spoken text can reasonably fit each time slot at a natural delivery pace. Flag sections that need faster speech or a longer duration.
+- Ensure the voice-over section count, scene count, and tone directions agree with one another.
+- Keep units, currencies, quantities, dates, names, and examples consistent across narration, graphics, subtitles, and captions.
+- For numerical examples, show the calculation explicitly and verify the arithmetic. For Indonesian examples, use a consistent rupiah notation (for example, Rp100.000 - Rp95.000 = Rp5.000).
+- Separate related concepts accurately. For a business-finance explainer, do not imply that revenue alone measures financial health or that profit is the same as cash flow.
+- Review every scene for duplicated, irrelevant, or contradictory narration.
+
+### Subtitle and file integrity
+- Provide the complete subtitle text separately from production directions when an SRT or other subtitle file is requested.
+- Check SRT sequence numbers, timestamp format, chronological order, non-overlapping cues, and coverage of the full spoken narration.
+- Do not call subtitles "perfectly synced" without checking them against the final voice-over timing. Label draft timings as estimates until audio is available.
+- Do not state that files are saved, attached, rendered, or ready unless the files were actually created and their paths/existence were verified.
+- When file tools are unavailable, provide the file contents in the response and state that the user must save them; never invent a local path.
+
+### Final review
+- Correct spelling, grammar, punctuation, and unnatural translation.
+- Check every CTA for natural language and a single clear action.
+- Include a fact-check list for factual statements and a rights checklist for music, footage, fonts, logos, likenesses, and voice use.
+- State exactly what is complete (script/brief/subtitles) and what still requires recording, generation, editing, rendering, or publishing.
+- Do not claim the final video or audio exists when only production instructions have been prepared.
+
+A package must not be marked complete if any material timeline, currency, factual, subtitle, or file-integrity check is unresolved. Report the open issue clearly and fix it before delivery.
+
