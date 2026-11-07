@@ -1,0 +1,37 @@
+1
+00:00:00,000 --> 00:00:03,500
+Penjualan tinggi belum tentu laba besar.
+
+2
+00:00:03,500 --> 00:00:08,000
+Omzet atau revenue adalah total
+penjualan sebelum biaya.
+
+3
+00:00:08,000 --> 00:00:13,000
+Biaya bisa berupa sewa, gaji,
+bahan, dan ongkir.
+
+4
+00:00:13,000 --> 00:00:20,000
+Laba bersih adalah sisa setelah
+seluruh biaya dihitung.
+
+5
+00:00:20,000 --> 00:00:28,000
+Penjualan seratus ribu rupiah,
+biaya sembilan puluh lima ribu.
+
+6
+00:00:28,000 --> 00:00:35,000
+Laba bersihnya hanya lima ribu rupiah,
+bukan seratus ribu.
+
+7
+00:00:35,000 --> 00:00:40,000
+Omzet mengukur penjualan;
+laba menunjukkan hasil setelah biaya.
+
+8
+00:00:40,000 --> 00:00:45,000
+Ikuti untuk tips bisnis yang praktis!
