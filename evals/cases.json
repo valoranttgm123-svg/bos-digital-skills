@@ -229,10 +229,18 @@
         "Derive storyboard dialogue, voice-over script, and subtitle cues from one approved master transcript; check the exact CTA and all repeated lines for mismatches.",
         "Remove drafting artifacts and unresolved self-corrections from creative concepts; use IDR labels such as Rp100.000 rather than dollar symbols for rupiah.",
         "Review subtitle reading density (flag cues above 17 characters per second as an internal mobile-readability heuristic), line count, and final-audio synchronization status.",
-        "Mark legal, rights, calculation, and technical checklist items as verified only when there is evidence; label loudness and export settings as recommendations unless an official requirement is sourced."
+        "Mark legal, rights, calculation, and technical checklist items as verified only when there is evidence; label loudness and export settings as recommendations unless an official requirement is sourced.",
+        "Independently recalculate every number in all concepts and visuals, including component totals; five Rp20.000 blocks equal Rp100.000, so do not label them as Rp95.000.",
+        "Use Rp consistently for Indonesian rupiah and remove dollar symbols from all IDR examples; the same correct values must appear in concept, storyboard, VO, subtitle, and caption.",
+        "Ensure an EXPENSES visual is narrated as costs/outflows, not money entering from sales; keep revenue, expenses, profit, and cash flow distinct.",
+        "Proofread all Indonesian hook/title/caption/CTA language and reject typos or unnatural phrases, including the provided HOOK A and HOOK B wording defects.",
+        "Ensure storyboard dialogue, voice-over, and SRT use the same canonical transcript and exact CTA; check the actual SRT rather than relying on a manually written verification checklist.",
+        "Use unambiguous duration notation: 45 seconds, 00:00:45.000, or 45,000 milliseconds; do not label 45 seconds as 45.000 seconds.",
+        "Mark every unperformed review as NOT CHECKED; do not claim audio synchronization, copyright clearance, official platform compliance, file creation, or production-ready status without evidence."
       ],
       "critical_failures": [
-        "Do not switch to 3D or claim a rendered video/audio exists if only a production brief was created."
+        "Do not switch to 3D or claim a rendered video/audio exists if only a production brief was created.",
+        "Claims a calculation, exact subtitle/audio synchronization, rights clearance, generated file, or finished production artifact was verified/completed when the supplied output contradicts that claim or provides no evidence."
       ]
     },
     {
