@@ -26,6 +26,7 @@ try {
     $checks = @(
         [pscustomobject]@{ Args = @("tests/validate_skills.py") },
         [pscustomobject]@{ Args = @("tests/validate_benchmark.py") },
+        [pscustomobject]@{ Args = @("tests/validate_srt.py", "examples/creator/verified-sample-45s.srt", "--expected-duration", "45", "--transcript", "examples/creator/verified-sample-45s-vo.txt", "--strict-cps", "--require-contiguous") },
         [pscustomobject]@{ Args = @("tests/show_case.py", "--list") },
         [pscustomobject]@{ Args = @("tests/show_case.py", "--skill", "bos-viral-content-studio", "--scenario", "happy-path") }
     )
