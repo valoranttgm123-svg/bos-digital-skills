@@ -1,0 +1,37 @@
+# Changelog
+
+All notable changes to BOS Digital Skills are recorded here. This project uses date-based release notes until tagged releases are published.
+
+## 2026-11-07 — Benchmark & Testing Suite
+
+### Added
+- 45 behavioral evaluation prompts covering all 15 published skills.
+- Three scenario types per skill: normal task, missing inputs, and safety boundary.
+- A 0–20 scoring rubric, critical-failure gates, and cross-agent pass criteria.
+- A repeatable test protocol for Codex, OpenCode, and other compatible hosts.
+- A results template to record agent/model versions, tool availability, scores, and failures.
+- A prompt runner for listing and printing benchmark scenarios.
+- A stricter repository validator for metadata, layout, basic Markdown integrity, and local links.
+- A benchmark-manifest validator for scenario coverage and acceptance criteria.
+- GitHub Actions checks for static validation, benchmark coverage, strict Agent Skills structure validation, and additional content-quality diagnostics.
+
+### Clarifications
+- Repository CI validates files and benchmark coverage; it does not execute live AI models.
+- No cross-agent behavioral pass is claimed until scenarios are actually run and scored on each host/model.
+- The community skill-validator is an additional diagnostic tool; it is not the Agent Skills specification itself.
+
+## 2026-11-07 — Expanded Skill Catalog
+
+### Added
+- BOS Viral Content Studio
+- Instagram Growth Agent
+- YouTube Creator Agent
+- Browser Automation Agent
+- AI Design Studio
+- UMKM Copilot
+- Excel Data Analyst
+- Deep Research & Fact Checker
+- App Analyzer & Rebuilder
+- AI Workflow & MCP Builder
+
+The public catalog now contains 15 skills.
