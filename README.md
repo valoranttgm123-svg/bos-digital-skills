@@ -103,6 +103,10 @@ The benchmark contains 45 scenarios (three for each skill). See [Benchmark & Tes
 
 GitHub Actions validates file structure, metadata, benchmark coverage, and additional quality diagnostics on pushes and pull requests. Static CI does not execute a live model; behavioral passes must be recorded separately.
 
+## Project history
+
+See [CHANGELOG.md](CHANGELOG.md) for release notes.
+
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).
