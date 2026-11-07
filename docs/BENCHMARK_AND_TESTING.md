@@ -8,6 +8,7 @@ Run from the repository root:
 
     python tests/validate_skills.py
     python tests/validate_benchmark.py
+    python tests/validate_srt.py examples/creator/verified-sample-45s.srt --expected-duration 45 --transcript examples/creator/verified-sample-45s-vo.txt --strict-cps --require-contiguous
 
 On Windows PowerShell, run the complete local static check and prompt-runner smoke test:
 
@@ -28,6 +29,8 @@ For deeper specification and quality diagnostics, GitHub Actions installs the co
 - evals/TEST_PROTOCOL.md explains fresh-session, two-host testing.
 - evals/RESULTS_TEMPLATE.md records model, host, tool availability, scores, and failures.
 - tests/show_case.py prints prompts for manual execution in Codex, OpenCode, or another compatible agent.
+
+On Windows, `tests/Run-LocalChecks.ps1` runs the local checks and prompt-runner smoke test. The example SRT and transcript under `examples/creator/` provide a known-good fixture for the timing and text-parity validator.
 
 ## Important distinction
 
