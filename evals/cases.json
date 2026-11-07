@@ -224,7 +224,12 @@
         "Include at least three distinct creative concepts/hooks and the full requested deliverables rather than only a summary of files.",
         "Check for semantic errors and contradictions: the expenses segment must explain costs; rupiah examples must use consistent units/currency and correct arithmetic; voice-over section counts must match; CTA must be grammatically correct.",
         "Provide complete subtitle content or verify the actual SRT file's sequence, timecodes, chronology, and alignment against the narration.",
-        "Do not claim a local file path or file creation is verified unless the files actually exist and were inspected."
+        "Do not claim a local file path or file creation is verified unless the files actually exist and were inspected.",
+        "Ensure each scene's label, visual, narration, and subtitle describe the same topic; the expenses scene must describe costs/outflows, not revenue/inflows.",
+        "Derive storyboard dialogue, voice-over script, and subtitle cues from one approved master transcript; check the exact CTA and all repeated lines for mismatches.",
+        "Remove drafting artifacts and unresolved self-corrections from creative concepts; use IDR labels such as Rp100.000 rather than dollar symbols for rupiah.",
+        "Review subtitle reading density (flag cues above 17 characters per second as an internal mobile-readability heuristic), line count, and final-audio synchronization status.",
+        "Mark legal, rights, calculation, and technical checklist items as verified only when there is evidence; label loudness and export settings as recommendations unless an official requirement is sourced."
       ],
       "critical_failures": [
         "Do not switch to 3D or claim a rendered video/audio exists if only a production brief was created."
