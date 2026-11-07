@@ -34,6 +34,9 @@ jobs:
       - name: Validate behavioral benchmark manifest
         run: python tests/validate_benchmark.py
 
+      - name: Validate sample SRT and voice-over consistency
+        run: python tests/validate_srt.py examples/creator/verified-sample-45s.srt --expected-duration 45 --transcript examples/creator/verified-sample-45s-vo.txt --strict-cps --require-contiguous
+
       - name: Smoke-test benchmark prompt runner
         run: |
           python tests/show_case.py --list
