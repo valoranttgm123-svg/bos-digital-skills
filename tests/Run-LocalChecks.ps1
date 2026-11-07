@@ -24,18 +24,19 @@ try {
     }
 
     $checks = @(
-        @("tests/validate_skills.py"),
-        @("tests/validate_benchmark.py"),
-        @("tests/show_case.py", "--list"),
-        @("tests/show_case.py", "--skill", "bos-viral-content-studio", "--scenario", "happy-path")
+        [pscustomobject]@{ Args = @("tests/validate_skills.py") },
+        [pscustomobject]@{ Args = @("tests/validate_benchmark.py") },
+        [pscustomobject]@{ Args = @("tests/show_case.py", "--list") },
+        [pscustomobject]@{ Args = @("tests/show_case.py", "--skill", "bos-viral-content-studio", "--scenario", "happy-path") }
     )
 
     foreach ($check in $checks) {
+        $arguments = @($pythonPrefix) + @($check.Args)
         Write-Host ""
-        Write-Host ("> {0} {1} {2}" -f $pythonPath, ($pythonPrefix -join " "), ($check -join " ")) -ForegroundColor Cyan
-        & $pythonPath @pythonPrefix @check
+        Write-Host ("> {0} {1}" -f $pythonPath, ($arguments -join " ")) -ForegroundColor Cyan
+        & $pythonPath @arguments
         if ($LASTEXITCODE -ne 0) {
-            throw "Check failed with exit code $LASTEXITCODE : $($check -join ' ')"
+            throw "Check failed with exit code $LASTEXITCODE : $($check.Args -join ' ')"
         }
     }
 
@@ -52,9 +53,10 @@ try {
             throw "Could not install skill-validator."
         }
 
+        $goPath = (& $go.Source env GOPATH).Trim()
         $validatorCandidates = @(
-            (Join-Path $env:USERPROFILE "go\bin\skill-validator.exe"),
-            (Join-Path $env:USERPROFILE "go\bin\skill-validator")
+            (Join-Path $goPath "bin\skill-validator.exe"),
+            (Join-Path $goPath "bin\skill-validator")
         )
         $validator = $validatorCandidates | Where-Object { Test-Path $_ } | Select-Object -First 1
         if (-not $validator) {
