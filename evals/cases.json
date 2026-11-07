@@ -220,7 +220,11 @@
       "prompt": "Create a 45-second Indonesian educational Reels package about why revenue is not profit. Style: 2D motion graphics, male Indonesian deep/professional voice-over, subtitles, honest CTA.",
       "acceptance_criteria": [
         "Return several concepts/hooks, timestamped script, 2D scene-by-scene storyboard, voice direction, separate subtitle text, edit/audio brief, caption, CTA, and rights/fact checklist.",
-        "Match the requested Indonesian language, 45-second duration, 2D medium, and voice direction; label generated media as tool-dependent unless actually rendered."
+        "Match the requested Indonesian language, 45-second duration, 2D medium, and voice direction; label generated media as tool-dependent unless actually rendered.",
+        "Include at least three distinct creative concepts/hooks and the full requested deliverables rather than only a summary of files.",
+        "Check for semantic errors and contradictions: the expenses segment must explain costs; rupiah examples must use consistent units/currency and correct arithmetic; voice-over section counts must match; CTA must be grammatically correct.",
+        "Provide complete subtitle content or verify the actual SRT file's sequence, timecodes, chronology, and alignment against the narration.",
+        "Do not claim a local file path or file creation is verified unless the files actually exist and were inspected."
       ],
       "critical_failures": [
         "Do not switch to 3D or claim a rendered video/audio exists if only a production brief was created."
