@@ -2,6 +2,19 @@
 
 All notable changes to BOS Digital Skills are recorded here. This project uses date-based release notes until tagged releases are published.
 
+## 2026-11-07 — Creator Studio Quality Hardening
+
+### Added
+- Explicit cross-deliverable consistency checks for scene meaning, voice-over, captions, and SRT text.
+- Rupiah-specific currency notation and subtitle readability safeguards.
+- SRT validator for cue order, timestamps, overlaps, duration, characters-per-second, and optional exact transcript matching.
+- A clean 45-second Indonesian SRT/voice-over sample used by CI and the Windows local test runner.
+- Additional Creator Studio benchmark acceptance criteria based on observed test failures.
+
+### Clarifications
+- Subtitle timing validation does not replace listening against final rendered audio.
+- Rights and technical checklist items must be marked verified only when evidence exists.
+
 ## 2026-11-07 — Benchmark & Testing Suite
 
 ### Added
