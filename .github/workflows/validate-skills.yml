@@ -1,23 +1,63 @@
-name: Validate Agent Skills
+name: Validate BOS Digital Skills
 
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
   validate:
+    name: Static validation and benchmark coverage
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate skill metadata and layout
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.25.x"
+
+      - name: Validate all Skill files
         run: python tests/validate_skills.py
+
+      - name: Validate behavioral benchmark manifest
+        run: python tests/validate_benchmark.py
+
+      - name: Smoke-test benchmark prompt runner
+        run: |
+          python tests/show_case.py --list
+          python tests/show_case.py --skill bos-viral-content-studio --scenario happy-path
+
+      - name: Install community skill quality validator
+        run: |
+          go install github.com/agent-ecosystem/skill-validator/cmd/skill-validator@v0.5.0
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Validate Agent Skills specification structure
+        run: skill-validator validate structure --strict skills/
+
+      - name: Generate additional content quality report
+        shell: bash
+        run: |
+          set +e
+          skill-validator check -o markdown skills/ >> "$GITHUB_STEP_SUMMARY"
+          result=$?
+          if [ "$result" -eq 2 ]; then
+            echo "Content-quality warnings are non-blocking; see the step summary."
+            exit 0
+          fi
+          if [ "$result" -ne 0 ]; then
+            exit "$result"
+          fi
+          echo "Additional content-quality checks passed."
