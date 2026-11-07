@@ -4,7 +4,7 @@ description: Plan and produce platform-ready short-form and long-form video cont
 license: Apache-2.0
 metadata:
   author: BOS Digital Indonesia
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # BOS Viral Content Studio
