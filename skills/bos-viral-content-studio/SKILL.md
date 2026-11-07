@@ -4,7 +4,7 @@ description: Plan and produce platform-ready short-form and long-form video cont
 license: Apache-2.0
 metadata:
   author: BOS Digital Indonesia
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # BOS Viral Content Studio
@@ -104,4 +104,37 @@ A package must not be marked complete if any material timeline, currency, factua
 - Do not claim an SRT is synchronized to a voice recording until it has been checked against the actual final audio. Before audio exists, call timecodes draft estimates.
 - Mark a checklist item as passed only after checking the underlying evidence. Original written concepts do not prove that music, fonts, photos, footage, logos, or voice assets are rights-cleared. Identify the source/license or mark it pending.
 - Distinguish a proposed technical setting (for example, loudness target, frame rate, or export dimension) from an official platform requirement. Verify current platform requirements or label the setting as a production recommendation.
+
+## Stop-the-line validation: no self-certified green checklists
+
+Treat the package as a draft until every relevant check has been performed against the actual deliverables. Never generate a checklist with every item marked verified by default. Use only these states: VERIFIED (with evidence), FAILED, NOT CHECKED, or NOT APPLICABLE. A claim is not evidence.
+
+### Numerical and visual arithmetic
+- Recalculate every number shown in a graphic, animation, table, caption, and narration independently.
+- Check component totals as well as the headline equation. Example: five expense blocks of Rp20.000 total Rp100.000, not Rp95.000. If total expenses are Rp95.000, choose components that actually sum to Rp95.000 (for example Rp20.000 + Rp50.000 + Rp25.000).
+- Verify revenue minus the stated expenses equals the stated profit. If the example is Rp100.000 - Rp95.000 = Rp5.000, the same values must appear everywhere.
+- Use the Indonesian rupiah label "Rp" consistently for IDR. Never use "$" as an IDR symbol. Do not mark currency as consistent if any graphic or concept uses a different currency symbol.
+- Distinguish revenue/sales, expenses, profit, and cash flow. Incoming sales belong to revenue; rent, wages, inventory cost, packaging, and delivery outflows belong to expenses. Do not label a cost illustration as revenue.
+- Avoid oversimplified claims that profit alone proves overall financial health. Explain that revenue measures sales, profit measures earnings after the relevant costs, and cash flow concerns cash receipts and payments over time.
+
+### Editorial and Indonesian-language review
+- Proofread every hook, on-screen title, caption, label, and CTA in the target language. Reject typos and unnatural phrases (for example, an ungrammatical phrase such as "JANGAN MAHU PROFIT SEKALI TEMPO").
+- Remove unresolved drafting notes, contradictory options, and internal corrections.
+- If the storyboard uses a chosen hook, ensure that the on-screen text and spoken hook are the same approved option.
+- Preserve consistent terminology and natural Indonesian. Do not mark the language review complete merely because the text is understandable.
+
+### Exact dialogue and timecode integrity
+- Maintain one canonical voice-over transcript. The storyboard audio, voice-over file, and exact-dialogue subtitles must match it word-for-word, including the CTA. If any line is intentionally shortened for captions, mark it as edited captions and do not claim verbatim synchronization.
+- Recalculate subtitle character density from actual cue text and cue duration. Treat the 17 characters/second threshold as an editorial warning threshold, not as proof of readability or a platform rule.
+- Use unambiguous duration notation. Write "45 seconds" or "00:00:45.000"; do not write "45.000 seconds" when you mean forty-five seconds. A duration of 45 seconds equals 45,000 milliseconds.
+- Static SRT validation can verify numbering, timestamp syntax, ordering, overlap, duration, character density, and text parity against a transcript. It cannot prove synchronization with a recorded voice or rendered video. Do not claim frame-accurate, ±0.1-second, or perfect audio synchronization without comparing the final rendered audio/video.
+
+### Evidence-based fact, rights, and delivery status
+- A calculation checklist is VERIFIED only after the calculation has been recomputed from the actual displayed amounts.
+- A subtitle checklist is VERIFIED only after the actual SRT has been parsed and compared with the canonical transcript; audio synchronization remains NOT CHECKED until listening or waveform review against the recorded voice-over.
+- Copyright/rights status cannot be inferred from an original concept description. Track the actual image, footage, font, logo, music, sound effect, voice, and likeness assets with their source and license/permission evidence. Otherwise mark rights review NOT CHECKED.
+- Mark platform technical specifications as recommendations unless supported by current official platform documentation. Do not call a loudness target a platform standard without a current authoritative source.
+- Separate "content package/production brief complete" from "media produced". A script and edit plan do not mean audio recorded, animation rendered, MP4 exported, ZIP packaged, or content published.
+- Never invent file paths or say a file exists unless its actual contents and path were checked. If a deliverable is only described, call it planned or pending.
+- If any material calculation, semantic, dialogue, subtitle, rights, or delivery-status check fails or remains unverified, do not label the package "complete and production-ready". Report the exact failed/pending items and provide a corrected draft.
 
