@@ -12,7 +12,7 @@ Portable, open Agent Skills by **BOS Digital Indonesia**. Each skill is a focuse
 |---|---|
 | [bos-viral-content-studio](skills/bos-viral-content-studio/SKILL.md) | Creator workflow for trend research, hooks, short/long video scripts, storyboards, voice-over briefs, subtitles, editing, and publishing |
 | [instagram-growth-agent](skills/instagram-growth-agent/SKILL.md) | Ethical Instagram profile strategy, content pillars, editorial calendars, organic distribution, and analytics |
-| [youtube-creator-agent](skills/youtube-creator-agent/SKILL.md) | YouTube channel strategy, topic research, scripts, titles, thumbnails, Shorts, metadata, and analytics |
+| [youtube-creator-agent](skills/youtube-creator-agent/SKILL.md) | YouTube channel strategy, topic research, scripts, titles, thumbnails, Shorts, metadata, and analytics |\n| [ai-design-studio](skills/ai-design-studio/SKILL.md) | Creative direction, image-generation prompts, brand systems, layouts, accessibility, and production specs |
 
 ### Automation and development
 
