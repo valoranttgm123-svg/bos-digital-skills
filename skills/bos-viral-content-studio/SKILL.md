@@ -93,3 +93,15 @@ Before presenting a content package as complete, run this checklist against the 
 
 A package must not be marked complete if any material timeline, currency, factual, subtitle, or file-integrity check is unresolved. Report the open issue clearly and fix it before delivery.
 
+### Cross-deliverable consistency and subtitle readability
+- Establish one approved master voice-over transcript before generating storyboard dialogue, voice-over files, captions, or subtitle files.
+- Copy the exact spoken words from the master transcript into the storyboard audio column and voice-over script. Derive subtitle cue text from the same source. If subtitles are intentionally shortened or paraphrased, label them as edited captions rather than exact dialogue subtitles and preserve the spoken meaning.
+- Compare the final CTA and every repeated line across the storyboard, voice-over, and SRT. Fix even small wording differences before delivery.
+- Validate each scene semantically: its label, visual, narration, and subtitle must describe the same subject. An EXPENSES scene must explain outflows such as rent, salaries, inventory, packaging, or delivery costs; it must not define incoming sales.
+- Remove internal drafting notes, unresolved alternatives, self-corrections, and editorial comments such as "wait, actually reverse" from the final creative concepts. Present one coherent, polished concept per option.
+- Use the requested currency explicitly. For Indonesian rupiah, use "Rp100.000" (or spell out "seratus ribu rupiah") and do not put a dollar sign before an IDR amount. Use "$" only when the example is genuinely in US dollars.
+- Treat 17 characters per second as an internal mobile-subtitle review threshold, not a universal platform rule. Split or shorten cues that exceed it where possible; use no more than two readable lines per cue unless the user requests otherwise.
+- Do not claim an SRT is synchronized to a voice recording until it has been checked against the actual final audio. Before audio exists, call timecodes draft estimates.
+- Mark a checklist item as passed only after checking the underlying evidence. Original written concepts do not prove that music, fonts, photos, footage, logos, or voice assets are rights-cleared. Identify the source/license or mark it pending.
+- Distinguish a proposed technical setting (for example, loudness target, frame rate, or export dimension) from an official platform requirement. Verify current platform requirements or label the setting as a production recommendation.
+
