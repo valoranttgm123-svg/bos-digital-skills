@@ -20,7 +20,7 @@ To also install and run the additional Go-based community quality validator (req
 
 These checks verify the catalog's skill metadata, naming/layout, Markdown basics, internal links, and completeness/shape of the behavioral test manifest.
 
-For deeper specification and quality diagnostics, GitHub Actions installs the community-maintained skill-validator CLI and runs it on skills/. It is an additional quality tool, not the Agent Skills specification itself.
+For deeper specification and quality diagnostics, GitHub Actions installs the community-maintained `skill-validator` v1.6.2 CLI from `github.com/agent-ecosystem/skill-validator/cmd/skill-validator` and runs it on `skills/`. Its Go module requires Go 1.25.5 or newer. The Windows optional runner uses the same pinned version. It is an additional quality tool, not the Agent Skills specification itself.
 
 ## Behavioral benchmark
 
