@@ -1,10 +1,10 @@
 ---
 name: small-business-operations
-description: Design and improve practical operating procedures for small retail, food and beverage, printing, photocopy, and service businesses. Use for inventory, purchasing, daily sales, cash reconciliation, payment verification, staffing routines, customer service, and operational reports.
+description: Create operating procedures that help small businesses run consistently. Use when improving retail, food, printing, or service operations such as stock control, purchasing, cash reconciliation, customer service, and daily reporting.
 license: Apache-2.0
 metadata:
   author: BOS Digital Indonesia
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Small Business Operations
