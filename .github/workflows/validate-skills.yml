@@ -44,7 +44,7 @@ jobs:
 
       - name: Install community skill quality validator
         run: |
-          go install github.com/agent-ecosystem/skill-validator/cmd/skill-validator@v0.5.0
+          go install github.com/agent-ecosystem/skill-validator/cmd/skill-validator@v1.6.2
           echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
       - name: Validate Agent Skills specification structure
