@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-11-08 — GitHub Actions CI Fix
+
+### Fixed
+- Corrected the `skill-validator` Go installation target. The v0.5.0 tag still declared the old module path, so installing it through the new module path failed with “module found, but does not contain package”.
+- Pinned the current v1.6.2 CLI at `github.com/agent-ecosystem/skill-validator/cmd/skill-validator` and aligned the Windows PowerShell runner.
+- Documented the validator's Go 1.25.5+ requirement.
+
+### Verified from the failed run
+- Python Skill metadata/layout validation passed for 15 skills.
+- Benchmark manifest validation passed for 15 skills and 45 scenarios.
+- The checked sample SRT/voice-over pair passed timing and transcript validation.
+- The prompt-runner smoke test passed.
+- The failure occurred only at the third-party Go CLI installation step; validator CLI checks were skipped.
+
 All notable changes to BOS Digital Skills are recorded here. This project uses date-based release notes until tagged releases are published.
 
 ## 2026-11-07 — Creator Studio v1.0.2 QA Hardening
