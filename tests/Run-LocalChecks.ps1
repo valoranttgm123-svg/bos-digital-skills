@@ -44,12 +44,12 @@ try {
     if ($InstallQualityValidator) {
         $go = Get-Command go -ErrorAction SilentlyContinue
         if (-not $go) {
-            throw "Go was not found. Install Go 1.24+ or run without -InstallQualityValidator."
+            throw "Go was not found. Install Go 1.25.5+ or run without -InstallQualityValidator."
         }
 
         Write-Host ""
-        Write-Host "> Installing community skill-validator v0.5.0" -ForegroundColor Cyan
-        & $go.Source install github.com/agent-ecosystem/skill-validator/cmd/skill-validator@v0.5.0
+        Write-Host "> Installing community skill-validator v1.6.2" -ForegroundColor Cyan
+        & $go.Source install github.com/agent-ecosystem/skill-validator/cmd/skill-validator@v1.6.2
         if ($LASTEXITCODE -ne 0) {
             throw "Could not install skill-validator."
         }
