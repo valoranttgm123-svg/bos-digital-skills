@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-08 — Skill Description Quality Fixes
+
+### Fixed
+- Rewrote six comma-heavy activation descriptions flagged by `skill-validator` so each describes the job and when to use it in natural language.
+- Bumped metadata versions for the six changed skills.
+- Kept strict structure validation enabled rather than suppressing description-quality warnings.
+
 ## 2026-11-08 — GitHub Actions CI Fix
 
 ### Fixed
