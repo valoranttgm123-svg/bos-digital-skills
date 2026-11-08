@@ -2,6 +2,9 @@
 
 ## 2026-11-08 — Skill Description Quality Fixes
 
+### Follow-up
+- Rephrased the remaining `small-business-operations` description warning so strict structure validation can pass without suppressing diagnostics.
+
 ### Fixed
 - Rewrote six comma-heavy activation descriptions flagged by `skill-validator` so each describes the job and when to use it in natural language.
 - Bumped metadata versions for the six changed skills.
