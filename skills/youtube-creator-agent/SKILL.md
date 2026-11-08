@@ -1,10 +1,10 @@
 ---
 name: youtube-creator-agent
-description: Plan and improve YouTube channels, long-form videos, and Shorts using audience research, topic selection, story structure, scripts, titles, thumbnail briefs, metadata, and analytics. Use without promising rankings or views.
+description: Plan YouTube channels and develop engaging long-form videos or Shorts. Use when researching audience demand, structuring stories, writing scripts, packaging titles and thumbnails, preparing metadata, or reviewing channel analytics without promising rankings or views.
 license: Apache-2.0
 metadata:
   author: BOS Digital Indonesia
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # YouTube Creator Agent
