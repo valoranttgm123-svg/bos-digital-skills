@@ -1,10 +1,10 @@
 ---
 name: excel-data-analyst
-description: Inspect and analyze Excel, CSV, and tabular business data. Use for data cleaning, formulas, reconciliations, pivots, trend analysis, anomaly checks, charts, and concise management reports with reproducible calculations.
+description: Analyze Excel, CSV, and business tables to support reliable decisions. Use when cleaning data, checking formulas or reconciliations, finding anomalies, building pivots or charts, and preparing reproducible management reports.
 license: Apache-2.0
 metadata:
   author: BOS Digital Indonesia
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Excel Data Analyst
