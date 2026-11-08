@@ -1,10 +1,10 @@
 ---
 name: bos-viral-content-studio
-description: Plan and produce platform-ready short-form and long-form video content for creators and businesses. Use for trend research, audience positioning, hooks, scripts, storyboards, shot lists, voice-over, subtitles, editing briefs, and publishing plans.
+description: Create and assess production-ready video content for creators and businesses. Use when planning a social video campaign or developing short-form or long-form videos from trend research through scripts, storyboards, voice-over, subtitles, editing, and publishing.
 license: Apache-2.0
 metadata:
   author: BOS Digital Indonesia
-  version: "1.0.2"
+  version: "1.0.3"
 ---
 
 # BOS Viral Content Studio
