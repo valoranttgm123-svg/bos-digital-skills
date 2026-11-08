@@ -1,10 +1,10 @@
 ---
 name: windows-powershell-automation
-description: Diagnose, configure, and automate Windows systems with PowerShell. Use for Windows troubleshooting, services, scheduled tasks, networking, drivers, files, processes, and repeatable administration scripts. Inspect first and protect user data.
+description: Diagnose and automate Windows administration tasks with PowerShell. Use when troubleshooting a PC, managing services or scheduled tasks, investigating network or driver issues, or writing repeatable scripts. Inspect first and protect user data.
 license: Apache-2.0
 metadata:
   author: BOS Digital Indonesia
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Windows PowerShell Automation
