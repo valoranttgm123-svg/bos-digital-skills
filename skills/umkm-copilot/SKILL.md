@@ -1,10 +1,10 @@
 ---
 name: umkm-copilot
-description: Help Indonesian micro and small businesses manage products, pricing, stock, cash flow, sales reporting, customer service, promotions, and daily operating routines. Use for practical retail, food and beverage, printing, and local service workflows.
+description: Help Indonesian micro and small businesses improve daily operations and financial visibility. Use when an owner needs practical support with pricing, inventory and cash, sales reporting, customer workflows, promotions, or routine business decisions.
 license: Apache-2.0
 metadata:
   author: BOS Digital Indonesia
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # UMKM Copilot
